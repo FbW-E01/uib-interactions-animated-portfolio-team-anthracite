@@ -1,0 +1,105 @@
+
+
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #031321;
+    padding: 30px;
+    font-family: helvetica;
+
+}
+
+.button {
+    position: relative;
+    display: block;
+    padding: 15px 30px;
+    margin: 0 30px;
+    letter-spacing: 18px;
+    font-size: 30px;
+    overflow: hidden;
+    font-size: 30px;
+    color: #026b9b;
+    text-decoration: none;
+    transition: 0.2s;
+    
+
+
+}
+
+.button:hover {
+
+    color: #031321 ;
+    background: rgb(0, 162, 255);
+    box-shadow: 0 0 20px #026b9b, 0 0 80px #026b9b, 0 0 160px #026b9b, 0 0 320px #026b9b ;
+    transition-delay: 1s;
+}
+
+.button span:nth-child(1) {
+    top: 0;
+    transform: translateX(-115%);
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #026b9b);
+
+}
+
+.button:hover span:nth-child(1) {
+
+    transform: translateX(100%);
+    transition: 1s;
+}
+
+.button:hover span:nth-child(2) {
+
+    transform: translateY(100%);
+    transition: 1s 0.25s;
+}
+
+.button:hover span:nth-child(3) {
+
+    transform: translateX(-115%);
+    transition: 1s 0.5s;
+}
+
+.button:hover span:nth-child(4) {
+
+    transform: translateY(-130%);
+    transition: 1s 0.75s;
+}
+
+
+
+.button span:nth-child(2) {
+    right: 0;
+    transform: translateY(-130%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #026b9b);
+
+}
+
+.button span:nth-child(3) {
+    bottom: 0;
+    transform: translateX(100%);
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, #026b9b);
+
+}
+
+.button span:nth-child(4) {
+    left: 0;
+    transform: translateY(100%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #026b9b);
+
+}
+
+.button span {
+    position: absolute;
+    display: block;
+}
