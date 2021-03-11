@@ -31,7 +31,7 @@ footer {
 
 .button:hover {
 
-    color: rgb(25, 28, 36) ;
+    color: #031321 ;
     background: rgb(0, 162, 255);
     box-shadow: 0 0 20px #026b9b, 0 0 80px #026b9b, 0 0 160px #026b9b, 0 0 320px #026b9b ;
     transition-delay: 1s;
