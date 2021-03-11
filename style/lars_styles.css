@@ -112,12 +112,12 @@ html {
 .webdev::before{
     content:attr(data-text2);
     position: absolute;
-    top:-30px;
+    top: -30px;
     transform-origin: bottom;
     transform: rotateX(180deg);
     background: linear-gradient(0deg, #fff 0, transparent 80%);
     -webkit-background-clip: text;
-    color:transparent;
+    color: transparent;
     opacity: 0.5;
 }
 
