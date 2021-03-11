@@ -1,0 +1,8 @@
+section {
+
+    clip-path: circle(50% at 50% 50%);
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+
+}
