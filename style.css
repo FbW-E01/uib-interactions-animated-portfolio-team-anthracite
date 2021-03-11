@@ -1,0 +1,115 @@
+:root {
+    font-family:  Helvetica, sans-serif, Arial;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 150vh;
+    background: white;
+}
+nav {
+    background: white;
+    width: 100vw;
+    height: 70px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 14px 7px -15px rgba(0,0,0,1);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+ul li.menu {
+    margin: 0 30px;
+    padding: 10px 0;
+
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    line-height: 30px;
+}
+.menu i {
+    padding-right: 5px;
+}
+.menu a:hover {
+    color: rgb(182, 179, 179);
+    line-height: 30px;
+}
+.menu a:hover i:not(.dp2 i, .dp3 i){
+    color: #f8b900;
+    transform: scale(1.5);
+}
+.menu:hover .dropdown_menu1 ul {
+    display: block;
+    margin: 30px;
+}
+.fa-angle-right {
+    padding-left: 30px;
+}
+
+ /* The container with dropdown menu on hover */
+ .dp1, .dp2, .dp3{
+    position: relative;
+    display: block;
+}
+  /* Dropdown Content (Hidden) */
+.dropdown_menu1 {
+    display: none;
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+}
+  
+ /* inside the dropdown */
+.dropdown_menu1 a {
+    padding: 10px;
+    border-bottom:  solid 1px #f8b900;;
+    background-color: rgb(238, 236, 236);
+    box-shadow: 0px 8px 16px 0px rgb(218, 216, 216);
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+}
+  /* dropdown menu1 on hover*/
+.dp1:hover .dropdown_menu1 {
+    display: block;
+}
+/* dropdown menu2 on hover*/
+.dropdown_menu2 {
+    display: none;
+    position: relative;
+}
+.dp2:hover .dropdown_menu2 {
+    display: block;
+}
+.dropdown_menu2 a:hover { 
+    background-color: rgb(238, 236, 236); 
+}
+ 
+.dp2 a, .dp3 a {
+    width: 200px;
+}
+
+/* dropdown menu3 on hover*/
+.dropdown_menu3 {
+    display: none;
+}
+.dp3:hover .dropdown_menu3 {
+    display: block;
+}
+.dropdown_menu3 a:hover { 
+    background-color:  rgb(238, 236, 236); 
+}
+  
