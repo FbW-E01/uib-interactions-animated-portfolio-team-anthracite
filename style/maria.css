@@ -1,6 +1,7 @@
 :root {
     font-family:  Helvetica, sans-serif, Arial;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,9 @@ body {
     width: 100vw;
     background: white;
 }
+
+
+/* nav style */
 nav {
     background: white;
     width: 100vw;
@@ -26,11 +30,13 @@ nav {
 ul {
     list-style-type: none;
     display: flex;  
-}
+}   
+
 li.nav {
     margin: 0 30px;
     padding: 10px 0 
 }
+
 .menu a {
     text-decoration: none;
     color: black;
@@ -47,24 +53,28 @@ li.nav {
     line-height: 30px;
 }
 
+/* hover style and exceptions */
 .menu a:hover i:not(.dp2 i, .dp3 i, .fa-angle-down) {
     color: #f8b900;
     transform: scale(1.5);
 }
+
 .fa-angle-down {
     padding-left: 10px;
-}
-.menu:hover .dropdown_menu1 ul {
-    display: block;
-    /* margin: 30px; */
 }
 
 .fa-angle-right {
     padding-left: 30px;
 }
 
+.menu:hover .dropdown_menu1 ul {
+    display: block;
+}
+
  /* The container with dropdown menu on hover */
- .dp1, .dp2, .dp3{
+ .dp1, 
+ .dp2, 
+ .dp3 {
     display: block;
 }
   /* Dropdown Content (Hidden) */
@@ -86,10 +96,12 @@ li.nav {
     display: block;
     font-size: 1em;
 }
+
   /* dropdown menu1 on hover*/
 .dp1:hover .dropdown_menu1 {
     display: block;
 }
+
 /* dropdown menu2 on hover*/
 .dropdown_menu2 {
     display: none;
@@ -98,9 +110,11 @@ li.nav {
     right: -200px;
     top: 50px;
 }
+
 .dp2:hover .dropdown_menu2 {
     display: block;
 }
+
 .dropdown_menu2 a:hover { 
     background-color: rgb(238, 236, 236); 
 }
@@ -108,7 +122,8 @@ li.nav {
 .dp2 a, .dp3 a {
     width: 200px;
 }
-.dropdown_menu2 ul li, .dropdown_menu3 ul li {
+.dropdown_menu2 ul li, 
+.dropdown_menu3 ul li {
     display: block;
     margin: 0;
 }
@@ -120,9 +135,11 @@ li.nav {
     right: -200px;
     top: 100px;
 }
+
 .dp3:hover .dropdown_menu3 {
     display: block;
 }
+
 .dropdown_menu3 a:hover { 
     background-color:  rgb(238, 236, 236); 
 }
