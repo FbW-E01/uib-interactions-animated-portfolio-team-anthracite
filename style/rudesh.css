@@ -21,7 +21,7 @@ footer {
     font-size: 30px;
     overflow: hidden;
     font-size: 30px;
-    color: blue;
+    color: #026b9b;
     text-decoration: none;
     transition: 0.2s;
     
@@ -31,19 +31,18 @@ footer {
 
 .button:hover {
 
-    color: rgb(103, 143, 228) ;
-    background: blue;
-    box-shadow: 0 0 20px blue, 0 0 80px blue, 0 0 160px blue, 0 0 320px blue ;
+    color: rgb(25, 28, 36) ;
+    background: rgb(0, 162, 255);
+    box-shadow: 0 0 20px #026b9b, 0 0 80px #026b9b, 0 0 160px #026b9b, 0 0 320px #026b9b ;
     transition-delay: 1s;
 }
 
 .button span:nth-child(1) {
-    /* border: brown 1px solid; */
     top: 0;
     transform: translateX(-115%);
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, transparent, blue);
+    background: linear-gradient(90deg, transparent, #026b9b);
 
 }
 
@@ -73,33 +72,32 @@ footer {
 
 
 
-/* .button span:nth-child(2) {
+.button span:nth-child(2) {
     right: 0;
     transform: translateY(-130%);
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(180deg, transparent, blue);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #026b9b);
 
-} */
+}
 
 .button span:nth-child(3) {
-    /* border: brown 1px solid; */
     bottom: 0;
     transform: translateX(100%);
     width: 100%;
     height: 4px;
-    background: linear-gradient(270deg, transparent, blue);
+    background: linear-gradient(270deg, transparent, #026b9b);
 
 }
 
-/* .button span:nth-child(4) {
+.button span:nth-child(4) {
     left: 0;
     transform: translateY(100%);
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(360deg, transparent, blue);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #026b9b);
 
-} */
+}
 
 .button span {
     position: absolute;
