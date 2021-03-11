@@ -59,7 +59,6 @@ li.nav {
     color: #f8b900;
     transform: scale(1.5);
 }
-
 /* arrows inside menu and dropdown menus */
 .fa-angle-down {
     padding-left: 10px;
@@ -67,6 +66,10 @@ li.nav {
 
 .fa-angle-right {
     float: right;
+}
+/* arrow right in dropdown menu stays black in hover */
+.menu a:hover .fa-angle-right {
+    color: black;
 }
 
 /* Dropdown menu style */
