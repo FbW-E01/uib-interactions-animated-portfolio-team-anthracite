@@ -9,7 +9,6 @@
 
 body {
     width: 100vw;
-    height: 150vh;
     background: white;
 }
 nav {
@@ -17,6 +16,7 @@ nav {
     width: 100vw;
     height: 70px;
     padding: 0 30px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,13 +25,11 @@ nav {
 
 ul {
     list-style-type: none;
-    display: flex;
-    
+    display: flex;  
 }
-ul li.menu {
+li.nav {
     margin: 0 30px;
-    padding: 10px 0;
-
+    padding: 10px 0 
 }
 .menu a {
     text-decoration: none;
@@ -39,35 +37,41 @@ ul li.menu {
     display: block;
     line-height: 30px;
 }
+
 .menu i {
     padding-right: 5px;
 }
+
 .menu a:hover {
     color: rgb(182, 179, 179);
     line-height: 30px;
 }
-.menu a:hover i:not(.dp2 i, .dp3 i){
+
+.menu a:hover i:not(.dp2 i, .dp3 i, .fa-angle-down) {
     color: #f8b900;
     transform: scale(1.5);
 }
+.fa-angle-down {
+    padding-left: 10px;
+}
 .menu:hover .dropdown_menu1 ul {
     display: block;
-    margin: 30px;
+    /* margin: 30px; */
 }
+
 .fa-angle-right {
     padding-left: 30px;
 }
 
  /* The container with dropdown menu on hover */
  .dp1, .dp2, .dp3{
-    position: relative;
     display: block;
 }
   /* Dropdown Content (Hidden) */
 .dropdown_menu1 {
     display: none;
     position: absolute;
-    width: 250px;
+    width: 200px;
     z-index: 1;
 }
   
@@ -90,6 +94,9 @@ ul li.menu {
 .dropdown_menu2 {
     display: none;
     position: relative;
+    position: absolute;
+    right: -200px;
+    top: 50px;
 }
 .dp2:hover .dropdown_menu2 {
     display: block;
@@ -101,10 +108,17 @@ ul li.menu {
 .dp2 a, .dp3 a {
     width: 200px;
 }
+.dropdown_menu2 ul li, .dropdown_menu3 ul li {
+    display: block;
+    margin: 0;
+}
 
 /* dropdown menu3 on hover*/
 .dropdown_menu3 {
     display: none;
+    position: absolute;
+    right: -200px;
+    top: 100px;
 }
 .dp3:hover .dropdown_menu3 {
     display: block;
