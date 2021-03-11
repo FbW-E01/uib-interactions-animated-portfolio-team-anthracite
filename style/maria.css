@@ -99,7 +99,7 @@ li.nav {
 }
 
 /* underline of dropdown menu elements smaller than content */
-.dropdown_menu1 a:before {
+.dropdown_menu1 a::before {
   content : "";
   position: absolute;
   width: 60%; 
