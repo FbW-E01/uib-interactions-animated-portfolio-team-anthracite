@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+
+}
+
+#main_wrap {
+    margin: 0;
+    background: radial-gradient(#03a9f4, #004b6c);
+    width: 100%;
+    height: 85vh;
+    position: relative;
+
+}
+
+.info {
+    position: absolute;
+    top: 50px;
+    left: 45%;
+    cursor: pointer;
+    background-color: #03a9f4;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 40px white;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    clip-path: circle(20px at 30px 30px);
+    transition: clip-path 0.5s linear;
+    animation: up_swing linear 3s infinite;
+}
+
+.info:hover {
+    clip-path: circle(400px at 30px 30px);
+    animation: none;
+}
+
+.i_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #ff1493;
+}
+
+.info_content {
+    height: 80%;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_text {
+    display: block;
+    position: absolute;
+
+    margin-top: 8px;
+    font-size: 30px;
+    text-align: center;
+    top: 40px;
+}
+
+.info_content img {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 25%;
+    margin: auto;
+    transform: scale(0.5);
+}
+
+.freelance {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 65px;
+    animation: side_swing 8s linear infinite alternate;
+}
+
+.freelance:before {
+    content: attr(data-text1);
+    position: absolute;
+    top: -30px;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    background: linear-gradient(0deg, #fff 0, transparent 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+}
+
+.webdev{
+    position: absolute;
+    top:70%;
+    left:50%;
+    color:white;
+    font-size: 65px;
+    animation: side_swing 8s linear infinite alternate;
+    animation-delay: 2s;
+}
+.webdev::before{
+    content:attr(data-text2);
+    position: absolute;
+    top: -30px;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    background: linear-gradient(0deg, #fff 0, transparent 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+}
+
+@keyframes side_swing {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-500px, 0);
+    }
+
+    75% {
+        transform: translate(50px, 0);
+    }
+}
+
+@keyframes up_swing {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    33% {
+        transform: translate(0, 15px);
+    }
+
+    66% {
+        transform: translate(0, -15px);
+    }
+}
